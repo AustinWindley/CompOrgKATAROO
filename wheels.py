@@ -14,8 +14,8 @@ GPIO.setup(24, GPIO.OUT)
 #First wheel
 GPIO.output(18, GPIO.HIGH)
 GPIO.output(14, GPIO.LOW)
-GPIO.output(23, GPIO.HIGH)
-GPIO.output(24, GPIO.LOW)
+#GPIO.output(23, GPIO.HIGH)
+#GPIO.output(24, GPIO.LOW)
 
 print("ON")
 time.sleep(5)
@@ -23,8 +23,8 @@ time.sleep(5)
 GPIO.output(18, GPIO.LOW)
 GPIO.output(14, GPIO.HIGH)
 #second wheel
-GPIO.output(23, GPIO.LOW)
-GPIO.output(24, GPIO.HIGH)
+#GPIO.output(23, GPIO.LOW)
+#GPIO.output(24, GPIO.HIGH)
 time.sleep(5)
 #make sure everything is off
 GPIO.output(24, GPIO.LOW)
