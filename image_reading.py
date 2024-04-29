@@ -20,10 +20,14 @@ while(keep_running):
 
     coords = np.transpose(np.nonzero(mask))
     try:  
-        print(f"0: {coords[0][0]}")
-        print(f"1: {coords[0][1]}")
+        if (coords[0][1] > 450):
+            print("Turn Left")
+        elif (coords[0][1] < 250):
+            print("Turn Right")
+        else:
+            print("Go Forward")
     except:
-        print("No Red Pixels")
+        print("No Red Pixels: STOP")
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         keep_running = False
