@@ -3,7 +3,7 @@ import numpy as np
 
 image = cv2.VideoCapture(0)
 lower_laser = np.array([0,0,180], dtype="uint8") #lower bound for laser detection
-upper_laser = np.array([100,100,255], dtype="uint8") #upper bound
+upper_laser = np.array([120,120,255], dtype="uint8") #upper bound
 
 #loop that turns each frame into an image and analyzes it
 keep_running = True
